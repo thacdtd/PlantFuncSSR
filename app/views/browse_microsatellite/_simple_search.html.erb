@@ -1,0 +1,45 @@
+<form class="form-horizontal">
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>
+			Search
+		</legend>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="family">Family</label>
+			<div class="col-md-6">
+				<select id="family" name="family" class="form-control chzn-select">
+					<% @families.each do |fami| %>
+					<option value="<%= fami.id %>"><%= fami.name %></option>
+					<% end %>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="species">Species</label>
+			<div class="col-md-6">
+				<div id="species_cbo">
+					<select id="species" name="species" class="form-control chzn-select">
+						<% @species.each do |specie| %>
+							<option value="<%= specie.id %>"><%= specie.name %></option>
+						<% end %>
+					</select>
+				</div>
+			</div>
+		</div>
+
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="search"></label>
+				<div class="col-md-6">
+					<button id="search" name="search" class="btn btn-primary">
+						Search
+					</button>
+				</div>
+			</div>
+
+	</fieldset>
+</form>

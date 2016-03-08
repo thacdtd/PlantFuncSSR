@@ -1,0 +1,71 @@
+<!-- Modal -->
+<div class="modal fade" id="modal_search_marker" tabindex="-1" role="dialog" aria-labelledby="modal_search_marker">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="modal_search_markerLabel">Search Markers</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal">
+					<fieldset>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="type_of_repeat">Type</label>
+							<div class="col-md-6">
+								<select id="type_of_repeat" name="type_of_repeat" multiple class="form-control chzn-select" data-placeholder="Choose type...">
+									<option value="p1">Mono</option>
+									<option value="p2">Di</option>
+									<option value="p3">Tri</option>
+									<option value="p4">Tetra</option>
+									<option value="p5">Penta</option>
+									<option value="p6">Hexa</option>
+									<option value="c">Complex</option>
+									<option value="c*">Compound</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="motif_size">Motif size</label>
+							<div class="col-md-2">
+								<input id="motif_size" name="motif_size" type="text" placeholder="Motif size" class="form-control text-right" style="width: 60px;">
+							</div>
+							<div class="col-md-4">
+								(* Return all SSRs have Size &ge; this number)
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-4" for=""></div>
+							<div class="col-md-6">
+							<div class="checkbox">
+							<label>
+								<input type="checkbox" id="fdm_annotation" name="fdm_annotation"> FDM Annotation
+							</label>
+							</div>
+							</div>
+							</div>
+
+							<div class="col-md-12">
+							<br>
+							</div>
+
+							<!-- Button -->
+							<div class="form-group">
+							<label class="col-md-4 control-label" for="search"></label>
+							<div class="col-md-6">
+								<button id="search" name="search" class="btn btn-primary">
+									Search
+								</button>
+							</div>
+						</div>
+
+					</fieldset>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>

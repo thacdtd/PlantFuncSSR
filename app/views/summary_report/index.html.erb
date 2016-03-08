@@ -1,0 +1,141 @@
+<%= javascript_include_tag 'summary_report/summary_report' %>
+
+<div class="col-md-12">
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+	<h3><%= @species_name %></h3>
+</div>
+<div class="col-md-4"><br></div>
+</div>
+<div class="col-md-12"><br></div>
+
+<div class="col-md-12">
+<div class="col-md-6">
+	<div class="col-md-12">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-9">
+			<h4>Summary Statistics</h4>
+		</div>
+	</div>
+	<div class="col-md-12">
+	<table class="table table-striped">
+		<tbody>
+            <tr>
+            	<td>Total number of sequences examined:</td>
+            	<td><%= @statistic.Num_Seqs_Exam%></td>
+            </tr>
+            <tr>
+            	<td>Total size of examined sequences (bp):</td>
+            	<td><%= @statistic.Size_Exam_Seqs%></td>
+            </tr>
+            <tr>
+            	<td>Total number of identified SSRs:</td>
+            	<td><%= @statistic.Num_SSR_Indent%></td>
+            </tr>
+            <tr>
+            	<td>Number of SSR containing sequences:</td>
+            	<td><%= @statistic.SSR_Cont_Seqs%></td>
+            </tr>
+            <tr>
+            	<td>Number of sequences containing more than 1 SSR:</td>
+            	<td><%= @statistic.Seqs_Cont_SSR%></td>
+            </tr>
+            <tr>
+            	<td>Number of SSRs present in compound formation:</td>
+            	<td><%= @statistic.Num_SSR_Present%></td>
+            </tr>
+        </tbody>
+	</table>
+	</div>
+	
+	<div class="col-md-12">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-10">
+			<h4>Summary Perfect Repeats</h4>
+		</div>
+	</div>
+	<div class="col-md-12">
+	<table class="table table-striped">
+		<thead>
+            <tr>
+            	<th>SSR Type</th>
+                <th>Numbers</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+		<tbody>
+            <tr>
+            	<td>Mono</td>
+            	<td><%= @stat_repeat_list[0]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p1">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Di</td>
+            	<td><%= @stat_repeat_list[1]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p2">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Tri</td>
+            	<td><%= @stat_repeat_list[2]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p3">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Tetra</td>
+            	<td><%= @stat_repeat_list[3]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p4">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Penta</td>
+            	<td><%= @stat_repeat_list[4]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p5">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Hexa</td>
+            	<td><%= @stat_repeat_list[5]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=p6">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Complex</td>
+            	<td><%= @stat_repeat_list[6]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=c">Click for Repeats</a></td>
+            </tr>
+            <tr>
+            	<td>Compound</td>
+            	<td><%= @stat_repeat_list[7]%></td>
+            	<td><a href="markers_list?species_id=<%= @species %>&ssr_type=c*">Click for Repeats</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+        	<tr>
+            	<th>Total</th>
+            	<th><%= @sum_type%></th>
+            	<th><a href="markers_list?species_id=<%= @species %>">Click for Repeats</a></td>
+            </tr>
+        </tfoot>
+	</table>
+	</div>
+	
+</div>
+<div class="col-md-6">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="hidden" id="chart-value" data-charts_value="<%= @array %>"/>
+	<div id="stat_chart_container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+</div>
+</div>
+
+<div class="col-md-12">
+<div class="col-md-6">
+	
+</div>
+<div class="col-md-6">
+	
+</div>
+</div>

@@ -1,0 +1,87 @@
+<%= javascript_include_tag 'welcome/welcome' %>
+<form class="form-horizontal">
+	<fieldset>
+
+		<!-- Form Name -->
+		<legend>
+			Advance Search
+		</legend>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="family">Family</label>
+			<div class="col-md-6">
+				<select id="family" name="family" class="form-control chzn-select">
+					<% @families.each do |fami| %>
+					<option value="<%= fami.id %>"><%= fami.name %></option>
+					<% end %>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="species">Species</label>
+			<div class="col-md-6">
+				<div id="species_cbo">
+					<select id="species" name="species" class="form-control chzn-select">
+						<% @species.each do |specie| %>
+							<option value="<%= specie.id %>"><%= specie.name %></option>
+						<% end %>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="type_of_repeat">Type of Repeat</label>
+			<div class="col-md-6">
+				<select id="type_of_repeat" name="type_of_repeat" multiple data-placeholder="Type of Repeat" class="form-control chzn-select">
+					<option value="p1">Mono</option>
+					<option value="p2">Di</option>
+					<option value="p3">Tri</option>
+					<option value="p4">Tetra</option>
+					<option value="p5">Penta</option>
+					<option value="p6">Hexa</option>
+					<option value="c">Complex</option>
+					<option value="c*">Compound</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="no_of_repeat">Number of Repeat</label>
+			<div class="col-md-2">
+				<input id="no_of_repeat" name="no_of_repeat" type="text" placeholder="Number of Repeat" class="form-control text-right" style="width: 60px;">
+			</div>
+			<div class="col-md-4">
+				(* Return all SSRs have Repeat &ge; this number)	
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="go_anno">GO Annotation</label>
+			<div class="col-md-6">
+				<input id="go_anno" name="go_anno" type="text" placeholder="GO Annotation" class="form-control input-xs">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="inter_pro_anno">IPR Annotation</label>
+			<div class="col-md-6">
+				<input id="inter_pro_anno" name="inter_pro_anno" type="text" placeholder="IPR Annotation" class="form-control input-xs">
+			</div>
+		</div>
+
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="search"></label>
+				<div class="col-md-6">
+					<button id="search" name="search" class="btn btn-primary">
+						Search
+					</button>
+				</div>
+			</div>
+
+	</fieldset>
+</form>

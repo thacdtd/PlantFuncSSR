@@ -1,0 +1,112 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-justify">
+			<div class="col-md-12">
+		<h4> PlantFuncSSRs: Plant functional SSRs for biodiversity and ecological explorations </h4>
+		<p class="big">
+		<span class="tab"></span>Recently, microsatellites or simple sequence repeats (SSRs) have been linked to putative 
+functional domains; classifying them into a new class of functional markers called simple 
+
+sequence repeats functional domains markers (SSR-FDMs) in model and non-model species (Yu 
+
+et al., 2010; Bhattacharyya et al., 2014). Realizing the wide importance of SSRs, several online 
+
+repositories and data mining tools have been developed to address the need for on-line mining of 
+
+these markers such as UgMicroSatDb (Aishwarya and Sharma, 2008), SSR Biome and SSR 
+
+taxonomy (Jewell et al., 2006), PlantMarkers (Rudd et al., 2005), MoccaDB (Plechakova et al., 
+
+2009), CicArMiSatDB (Doddamani et al., 2014), and for Coffee ESTs (Poncet et al., 2006) have 
+
+been developed to assist the mining of the SSRs. However, the functional classification of SSRs 
+
+has not been studied in detailed. PlantFuncSSRs provides a platform for the wide exploration of 
+
+functional repeats available across wide range of plant species. Transcript assemblies present an 
+
+important source of information for developing genic microsatellite markers. Next generation 
+
+sequencing provides a cost-efficient way of transcript identification and facilitates the 
+
+development of transcript based SSR markers for model and non-model species, which has 
+
+resulted in rapid increases in the data made available online. 
+
+</p></div></div>
+
+<div class="col-md-12 text-justify">
+			<div class="col-md-6">
+				<p class="big">
+<span class="tab"></span>However, much of this data is 
+
+scattered across numerous websites and has not been mined or annotated for the identification of 
+
+SSRs. Recently, there have been some efforts to consolidate such data for example TropiTree 
+
+(<a href="http://bioinf.hutton.ac.uk/tropiTree" target="_blank">http://bioinf.hutton.ac.uk/tropiTree</a>) is a repository displaying the mined SSRs from NGS 
+
+transcript assemblies for 24 tropical plants. PlantFuncSSRs was constructed with the aim of 
+
+providing a standalone platform for the exploration of functional SSRs from the expressed 
+
+portions of the genome as well as online platform for mining the SSRs either from the transcripts 
+
+or the NGS reads of the transcriptome. To integrate previously published plant expressed 
+
+sequence tags (ESTs) data, all Putative Unique Transcripts (PUTs) representing 273 transcript 
+
+assemblies were downloaded from PlantGDB (Version release 187) available from 
+
+<a href="http://www.plantgdb.org/" target="_blank">http://www.plantgdb.org/</a> (Dong et al., 2004).  Additionally, version control 74 NGS 
+
+transcriptomes available at PhytoMetaSync (<a href="http://www.phytometasyn.ca" target="_blank">http://www.phytometasyn.ca</a>) (Facchini et al., 2012; 
+
+Xiao et al., 2013), 14 medicinal plant transcriptomes available from MPGR 
+
+(<a href="http://medicinalplantgenomics.msu.edu" target="_blank">http://medicinalplantgenomics.msu.edu</a>) (Góngora-Castillo et al., 2012; Góngora-Castillo and 
+
+Buell CR, 2013) and 3 ecotype specific <i>Brachypodium sylvaticum</i> transcriptomes available from 
+
+<a href="http://jaiswallab.cgrb.oregonstate.edu/genomics" target="_blank">http://jaiswallab.cgrb.oregonstate.edu/genomics</a> (Fox et al., 2013) were downloaded, 
+
+representing a total of 364 plant species. 
+
+		</p>	
+		</div>
+		<div class="col-md-6">
+				<div class="well">
+					<br />
+		        	<%= render partial: "advance_search", locals: {zone: @zone} %>
+		        </div>
+			</div>
+			
+		</div>
+		<div class="col-md-12">
+			<div class="col-md-12 text-justify">
+				<p class="big">
+				<span class="tab"></span>PlantFuncSSRs provides the SSRs information accompanied with the primer pair 
+
+information for more than 300 plants species including model as well as well as non-model 
+
+species in a easy to browse and user-friendly format. For the accomplishment of the above task, 
+
+Ruby rails, MYSQL functionalities have been integrated so that the user can easily extract the 
+
+information and the resource can be sustainably used for ecological explorations. We believe that 
+
+the availability of the above resource will aid the rapid development of SSRs-FDM-based 
+
+markers for application in plant breeding programs and development of genetic conservation 
+
+approaches for non-model plant species. We greatly appreciate your feedback on the further 
+
+improvement and continued development of PlantFuncSSRs for ecological explorations.
+<br />
+</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="overlay"><h2>Loading .. Please wait</h2></div>

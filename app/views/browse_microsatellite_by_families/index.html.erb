@@ -1,0 +1,93 @@
+<%= javascript_include_tag 'browse_microsatellite/browse_microsatellites' %>
+<div class="form-group">
+	<div class="col-md-2">
+	<label class="control-label" for="search_by_species">
+		Search by Families:
+	</label> 
+	</div> 
+	<div class="col-md-10">
+		<div class="container">
+		  <div class="btn-toolbar">
+		    <div class="btn-group btn-group-sm">
+		      <a class="btn btn-default <% if @alphabet == "a"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=a">A</a>
+		      <a class="btn btn-default <% if @alphabet == "b"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=b">B</a>
+		      <a class="btn btn-default <% if @alphabet == "c"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=c">C</a>
+		      <a class="btn btn-default <% if @alphabet == "d"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=d">D</a>
+		      <a class="btn btn-default <% if @alphabet == "e"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=e">E</a>
+		      <a class="btn btn-default <% if @alphabet == "f"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=f">F</a>
+		      <a class="btn btn-default <% if @alphabet == "g"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=g">G</a>
+		      <a class="btn btn-default <% if @alphabet == "h"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=h">H</a>
+		      <a class="btn btn-default <% if @alphabet == "i"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=i">I</a>
+		      <a class="btn btn-default <% if @alphabet == "j"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=j">J</a>
+		      <a class="btn btn-default <% if @alphabet == "k"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=k">K</a>
+		      <a class="btn btn-default <% if @alphabet == "l"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=l">L</a>
+		      <a class="btn btn-default <% if @alphabet == "m"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=m">M</a>
+		      <a class="btn btn-default <% if @alphabet == "n"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=n">N</a>
+		      <a class="btn btn-default <% if @alphabet == "o"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=o">O</a>
+		      <a class="btn btn-default <% if @alphabet == "p"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=p">P</a>
+		      <a class="btn btn-default <% if @alphabet == "q"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=q">Q</a>
+		      <a class="btn btn-default <% if @alphabet == "r"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=r">R</a>
+		      <a class="btn btn-default <% if @alphabet == "s"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=s">S</a>
+		      <a class="btn btn-default <% if @alphabet == "t"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=t">T</a>
+		      <a class="btn btn-default <% if @alphabet == "u"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=u">U</a>
+		      <a class="btn btn-default <% if @alphabet == "v"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=v">V</a>
+		      <a class="btn btn-default <% if @alphabet == "w"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=w">W</a>
+		      <a class="btn btn-default <% if @alphabet == "x"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=x">X</a>
+		      <a class="btn btn-default <% if @alphabet == "y"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=y">Y</a>
+		      <a class="btn btn-default <% if @alphabet == "z"%> btn-primary disabled <% end %>" href="browse_microsatellite_by_families?browse_by_alphabet=z">Z</a>
+		    </div>
+		  </div>
+		</div>          
+	</div>
+</div>
+	            
+
+
+<div class="col-md-12"></br></br></div>
+<div style="width:100%">
+<table id="tbl_browse_by_families" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+            	<th>Family Name</th>
+            	<th>Specie Name</th>
+                <th>Num Seqs Exam</th>
+                <th>Size Exam Seqs</th>
+                <th>Num SSR Indent</th>
+                <th>SSR Cont Seqs</th>
+                <th>Seqs Cont SSR</th>
+                <th>Num SSR Present</th>
+                <th>Get Repeat</th>
+            </tr>
+        </thead>
+ 
+        <tfoot>
+            <tr>
+            	<th>Family Name</th>
+            	<th>Specie Name</th>
+                <th>Num Seqs Exam</th>
+                <th>Size Exam Seqs</th>
+                <th>Num SSR Indent</th>
+                <th>SSR Cont Seqs</th>
+                <th>Seqs Cont SSR</th>
+                <th>Num SSR Present</th>
+                <th>Get Repeat</th>
+            </tr>
+        </tfoot>
+ 
+        <tbody>
+        	<% @Statistics.each do |stat| %>
+            <tr>
+            	<td><%= stat[0] %></td>
+            	<td><a href="summary_report?species_id=<%= stat[1].species_id %>"><%= Species.get_species_name(stat[1].species_id) %></a></td>
+                <td><%= stat[1].Num_Seqs_Exam %></td>
+                <td><%= stat[1].Size_Exam_Seqs %></td>
+                <td><%= stat[1].Num_SSR_Indent %></td>
+                <td><%= stat[1].SSR_Cont_Seqs %></td>
+                <td><%= stat[1].Seqs_Cont_SSR %></td>
+                <td><%= stat[1].Num_SSR_Present %></td>
+                <td><a href="markers_list?species_id=<%= stat[1].species_id %>">Get Repeat</a></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>

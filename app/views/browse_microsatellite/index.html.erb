@@ -1,0 +1,48 @@
+<%= javascript_include_tag 'browse_microsatellite/browse_main' %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-justify">
+			
+			<div class="col-md-4">
+				<h4> Browse Microsatellites </h4>
+				<p class="big">
+				<span class="tab"></span>In PlantFuncSSRs, Ruby on Rails(RoR) and MySQL functionalities have been combined to allow
+
+easy access to browse functional plant SSRs. The present page allows you to browse through the 
+
+distribution of SSRs across the plant kingdom. Three different search patterns based on family, 
+
+species name, and microsatellite have been provided. Clicking the user-defined search pattern 
+
+will give access to the list of the species and the distribution of the microsatellite. Each species-
+
+specific page is hyperlinked to the page containing the primer pairs for the identified SSRs. An 
+
+advanced browsing is also provided, which allows the search through the entire PlantFuncSSRs 
+
+either through species or family name, type of SSRs, function of SSRs and type of protein 
+
+domains.
+</p>
+			</div>
+			<div class="col-md-8">
+				<%= image_tag("PlantFuncSSR-ERD.png", alt: "PlantFuncSSR-ERD" , size: "700x400")%>
+			</div>
+		</div>
+	
+		<div class="col-md-12">
+			
+			<div class="col-md-6">
+				<div class="">
+		        	<%= render partial: "browse_by_alphabet", locals: {zone: @zone} %>
+		        </div>
+			</div>
+			<div class="col-md-6">
+				<div class="well">
+		        	<%= render partial: "simple_search", locals: {zone: @zone} %>
+		        </div>
+			</div>
+		</div>
+		
+	</div>
+</div>

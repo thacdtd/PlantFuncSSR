@@ -1,0 +1,673 @@
+I, [2015-11-19T21:41:24.813630 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:24 +1100
+F, [2015-11-19T21:41:24.819744 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:41:24.830701 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:24 +1100
+F, [2015-11-19T21:41:24.842009 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:41:27.483929 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:27 +1100
+F, [2015-11-19T21:41:27.489065 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:41:32.658116 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:32 +1100
+F, [2015-11-19T21:41:32.660807 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:41:35.014447 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:35 +1100
+F, [2015-11-19T21:41:35.017296 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:41:49.890901 #10061]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:41:49 +1100
+F, [2015-11-19T21:41:49.893651 #10061] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:42:05.435749 #10070]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:42:05 +1100
+F, [2015-11-19T21:42:05.441818 #10070] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:42:46.615189 #10079]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:42:46 +1100
+F, [2015-11-19T21:42:46.620233 #10079] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:42:46.662556 #10079]  INFO -- : Started GET "/favicon.ico" for ::1 at 2015-11-19 21:42:46 +1100
+F, [2015-11-19T21:42:46.667997 #10079] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:49:42.144416 #10159]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:49:42 +1100
+F, [2015-11-19T21:49:42.162228 #10159] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+I, [2015-11-19T21:50:39.114639 #10172]  INFO -- : Started GET "/" for ::1 at 2015-11-19 21:50:39 +1100
+F, [2015-11-19T21:50:39.120239 #10172] FATAL -- : 
+ActiveRecord::NoDatabaseError (Unknown database 'plantssr_production'):
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+D, [2015-11-28T23:43:02.112352 #51764] DEBUG -- :   [1m[36m (38.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2015-11-28T23:43:02.141377 #51764] DEBUG -- :   [1m[35m (26.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2015-11-28T23:43:02.143987 #51764] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-11-28T23:43:02.151030 #51764]  INFO -- : Migrating to CreateFamilies (20151014010905)
+D, [2015-11-28T23:43:02.165189 #51764] DEBUG -- :   [1m[35m (12.0ms)[0m  CREATE TABLE `families` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-11-28T23:43:02.170829 #51764] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+D, [2015-11-28T23:43:02.179576 #51764] DEBUG -- :   [1m[35mSQL (2.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151014010905')
+D, [2015-11-28T23:43:02.180642 #51764] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+I, [2015-11-28T23:43:02.180758 #51764]  INFO -- : Migrating to CreateSpecies (20151014024100)
+D, [2015-11-28T23:43:02.193573 #51764] DEBUG -- :   [1m[35m (11.1ms)[0m  CREATE TABLE `species` (`id` int(11) auto_increment PRIMARY KEY, `family_id` int(11), `name` varchar(255), `image` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-11-28T23:43:02.213954 #51764] DEBUG -- :   [1m[36m (19.8ms)[0m  [1mALTER TABLE `species` ADD CONSTRAINT `fk_rails_0b6166e342`
+FOREIGN KEY (`family_id`)
+  REFERENCES `families` (`id`)
+[0m
+D, [2015-11-28T23:43:02.214816 #51764] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.216539 #51764] DEBUG -- :   [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151014024100')[0m
+D, [2015-11-28T23:43:02.217562 #51764] DEBUG -- :   [1m[35m (0.6ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.217675 #51764]  INFO -- : Migrating to CreateSsrs (20151014052526)
+D, [2015-11-28T23:43:02.230746 #51764] DEBUG -- :   [1m[36m (11.1ms)[0m  [1mCREATE TABLE `ssrs` (`id` int(11) auto_increment PRIMARY KEY, `species_id` int(11), `SSR_ID` varchar(255), `SSR_nr` int(11), `SSR_type` varchar(255), `SSR` varchar(1000), `size` int(11), `start` int(11), `end` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2015-11-28T23:43:02.254353 #51764] DEBUG -- :   [1m[35m (22.9ms)[0m  ALTER TABLE `ssrs` ADD CONSTRAINT `fk_rails_824acfb1c3`
+FOREIGN KEY (`species_id`)
+  REFERENCES `species` (`id`)
+
+D, [2015-11-28T23:43:02.255179 #51764] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2015-11-28T23:43:02.256103 #51764] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151014052526')
+D, [2015-11-28T23:43:02.256699 #51764] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+I, [2015-11-28T23:43:02.256782 #51764]  INFO -- : Migrating to CreateAnnotations (20151014054028)
+D, [2015-11-28T23:43:02.266472 #51764] DEBUG -- :   [1m[35m (8.1ms)[0m  CREATE TABLE `annotations` (`id` int(11) auto_increment PRIMARY KEY, `species_id` int(11), `name` varchar(255), `MPG_name` varchar(255), `MPG_description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-11-28T23:43:02.282521 #51764] DEBUG -- :   [1m[36m (15.4ms)[0m  [1mALTER TABLE `annotations` ADD CONSTRAINT `fk_rails_96a873a473`
+FOREIGN KEY (`species_id`)
+  REFERENCES `species` (`id`)
+[0m
+D, [2015-11-28T23:43:02.283400 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.284183 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151014054028')[0m
+D, [2015-11-28T23:43:02.285118 #51764] DEBUG -- :   [1m[35m (0.7ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.285204 #51764]  INFO -- : Migrating to CreateStatistics (20151022005709)
+D, [2015-11-28T23:43:02.303216 #51764] DEBUG -- :   [1m[36m (16.1ms)[0m  [1mCREATE TABLE `statistics` (`id` int(11) auto_increment PRIMARY KEY, `species_id` int(11), `Num_Seqs_Exam` int(11), `Size_Exam_Seqs` int(11), `Num_SSR_Indent` int(11), `SSR_Cont_Seqs` int(11), `Seqs_Cont_SSR` int(11), `Num_SSR_Present` int(11), `Mono` int(11), `Di` int(11), `Tri` int(11), `Tetra` int(11), `Penta` int(11), `Hexa` int(11), `Complex` int(11), `Compound` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2015-11-28T23:43:02.323728 #51764] DEBUG -- :   [1m[35m (20.0ms)[0m  ALTER TABLE `statistics` ADD CONSTRAINT `fk_rails_d6c97f02d7`
+FOREIGN KEY (`species_id`)
+  REFERENCES `species` (`id`)
+
+D, [2015-11-28T23:43:02.324706 #51764] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2015-11-28T23:43:02.325650 #51764] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151022005709')
+D, [2015-11-28T23:43:02.326815 #51764] DEBUG -- :   [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+I, [2015-11-28T23:43:02.326944 #51764]  INFO -- : Migrating to CreatePrimer1s (20151106005909)
+D, [2015-11-28T23:43:02.348558 #51764] DEBUG -- :   [1m[35m (18.1ms)[0m  CREATE TABLE `primer1s` (`id` int(11) auto_increment PRIMARY KEY, `ssr_id` int(11), `Forward` varchar(255), `Reverse` varchar(255), `FP_Tm` float, `FP_Size` int(11), `RP_Tm` float, `RP_Size` int(11), `Product_Size` int(11), `Start` int(11), `End` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-11-28T23:43:02.370236 #51764] DEBUG -- :   [1m[36m (21.0ms)[0m  [1mALTER TABLE `primer1s` ADD CONSTRAINT `fk_rails_7b06c33674`
+FOREIGN KEY (`ssr_id`)
+  REFERENCES `ssrs` (`id`)
+[0m
+D, [2015-11-28T23:43:02.371461 #51764] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.373155 #51764] DEBUG -- :   [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151106005909')[0m
+D, [2015-11-28T23:43:02.374433 #51764] DEBUG -- :   [1m[35m (0.7ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.374608 #51764]  INFO -- : Migrating to CreatePrimer2s (20151106005930)
+D, [2015-11-28T23:43:02.393962 #51764] DEBUG -- :   [1m[36m (16.4ms)[0m  [1mCREATE TABLE `primer2s` (`id` int(11) auto_increment PRIMARY KEY, `ssr_id` int(11), `Forward` varchar(255), `Reverse` varchar(255), `FP_Tm` float, `FP_Size` int(11), `RP_Tm` float, `RP_Size` int(11), `Product_Size` int(11), `Start` int(11), `End` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2015-11-28T23:43:02.417661 #51764] DEBUG -- :   [1m[35m (22.7ms)[0m  ALTER TABLE `primer2s` ADD CONSTRAINT `fk_rails_162d2748ba`
+FOREIGN KEY (`ssr_id`)
+  REFERENCES `ssrs` (`id`)
+
+D, [2015-11-28T23:43:02.418900 #51764] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+D, [2015-11-28T23:43:02.420234 #51764] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151106005930')
+D, [2015-11-28T23:43:02.420945 #51764] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+I, [2015-11-28T23:43:02.421091 #51764]  INFO -- : Migrating to CreatePrimer3s (20151106005951)
+D, [2015-11-28T23:43:02.439999 #51764] DEBUG -- :   [1m[35m (16.4ms)[0m  CREATE TABLE `primer3s` (`id` int(11) auto_increment PRIMARY KEY, `ssr_id` int(11), `Forward` varchar(255), `Reverse` varchar(255), `FP_Tm` float, `FP_Size` int(11), `RP_Tm` float, `RP_Size` int(11), `Product_Size` int(11), `Start` int(11), `End` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-11-28T23:43:02.465580 #51764] DEBUG -- :   [1m[36m (24.9ms)[0m  [1mALTER TABLE `primer3s` ADD CONSTRAINT `fk_rails_ea98aa04d1`
+FOREIGN KEY (`ssr_id`)
+  REFERENCES `ssrs` (`id`)
+[0m
+D, [2015-11-28T23:43:02.466305 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.467094 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151106005951')[0m
+D, [2015-11-28T23:43:02.467642 #51764] DEBUG -- :   [1m[35m (0.4ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.467768 #51764]  INFO -- : Migrating to AddHasPrimerToSsrs (20151113011226)
+D, [2015-11-28T23:43:02.499846 #51764] DEBUG -- :   [1m[36m (31.1ms)[0m  [1mALTER TABLE `ssrs` ADD `has_primer` tinyint(1)[0m
+D, [2015-11-28T23:43:02.500576 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.501393 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151113011226')[0m
+D, [2015-11-28T23:43:02.502162 #51764] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.502244 #51764]  INFO -- : Migrating to AddHasAnnotationToSsrs (20151113011331)
+D, [2015-11-28T23:43:02.528108 #51764] DEBUG -- :   [1m[36m (24.3ms)[0m  [1mALTER TABLE `ssrs` ADD `has_annotation` tinyint(1)[0m
+D, [2015-11-28T23:43:02.528913 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.529767 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151113011331')[0m
+D, [2015-11-28T23:43:02.530460 #51764] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.530531 #51764]  INFO -- : Migrating to AddGotermToAnnotations (20151127140210)
+D, [2015-11-28T23:43:02.563811 #51764] DEBUG -- :   [1m[36m (32.1ms)[0m  [1mALTER TABLE `annotations` ADD `Goterm` varchar(1000)[0m
+D, [2015-11-28T23:43:02.564824 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.565569 #51764] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151127140210')[0m
+D, [2015-11-28T23:43:02.566275 #51764] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.566337 #51764]  INFO -- : Migrating to AddUnitProtToAnnotations (20151127140306)
+D, [2015-11-28T23:43:02.595031 #51764] DEBUG -- :   [1m[36m (27.3ms)[0m  [1mALTER TABLE `annotations` ADD `UnitProt` varchar(1000)[0m
+D, [2015-11-28T23:43:02.595811 #51764] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.596628 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151127140306')[0m
+D, [2015-11-28T23:43:02.597308 #51764] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.597384 #51764]  INFO -- : Migrating to AddInterProToAnnotations (20151127140324)
+D, [2015-11-28T23:43:02.628323 #51764] DEBUG -- :   [1m[36m (27.0ms)[0m  [1mALTER TABLE `annotations` ADD `InterPro` varchar(1000)[0m
+D, [2015-11-28T23:43:02.629225 #51764] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.629985 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151127140324')[0m
+D, [2015-11-28T23:43:02.630801 #51764] DEBUG -- :   [1m[35m (0.6ms)[0m  COMMIT
+I, [2015-11-28T23:43:02.630905 #51764]  INFO -- : Migrating to AddAnnotationIdToSsrs (20151128020445)
+D, [2015-11-28T23:43:02.662225 #51764] DEBUG -- :   [1m[36m (30.3ms)[0m  [1mALTER TABLE `ssrs` ADD `annotation_id` int(11)[0m
+D, [2015-11-28T23:43:02.663071 #51764] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2015-11-28T23:43:02.663867 #51764] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20151128020445')[0m
+D, [2015-11-28T23:43:02.664607 #51764] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT

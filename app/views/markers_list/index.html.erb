@@ -1,0 +1,104 @@
+<%= javascript_include_tag 'markers_list/markers_list' %>
+<div id="overlay"><h2>Loading .. Please wait</h2></div>
+<div class="col-md-5">
+  <h3>SSR Markers with Primer information</h3>
+  <h4><%= @species_name %></h4>
+  <ul>
+    <% if @ssr_types != nil %>
+      <li> SSR Type:
+  	<% @ssr_types.each_with_index do |ssr_type, i| %>
+  	  <%= get_ssr_type_name(ssr_type) %>
+  	  <% if (i !=  (@ssr_types.length() -1)) %>
+  	    ,
+  	  <% end %>
+  	<% end %>
+      </li>
+    <% end %>
+
+    <% if @no_of_repeat != nil %>
+      <li> Number of Repeat &ge;
+  	<%= @no_of_repeat %>
+      </li>
+    <% end %>
+
+    <% if @go_anno != nil %>
+      <li>
+        GO Term Annotation: <%= @go_anno %>
+      </li>
+    <% end %>
+
+    <% if @inter_pro_anno != nil %>
+      <li>
+        Inter Pro Annotation: <%= @inter_pro_anno %>
+      </li>
+    <% end %>
+
+    <% if @motif_size != nil %>
+      <li>
+        Motif Size &ge; <%= @motif_size %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div class="col-md-7">
+	<div id="search-btn">
+		<button type="button" class="btn btn-default btn-md pull-right" id="btn_search_marker">
+		  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+		</button>
+	</div>
+</div>
+<%= render partial: "search_marker", locals: {zone: @zone} %>
+<%= render partial: "primer", locals: {zone: @zone} %>
+<%= render partial: "annotation", locals: {zone: @zone} %>
+<input type="hidden" id="species_id" data-species_id="<%= @species %>"/>
+<div class="col-md-12"></br></br></div>
+<div class="col-md-12">
+<table id="tbl_markers_list" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+            	<th>SI_No</th>
+                <th>SSR ID</th>
+                <th>SSR Type</th>
+                <th>SSR</th>
+                <th>SSR Size</th>
+                <th>SSR Start</th>
+                <th>SSR End</th>
+                <th>Primer</th>
+                <th>Annotation</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+            	<th>SI_No</th>
+                <th>SSR ID</th>
+                <th>SSR Type</th>
+                <th>SSR</th>
+                <th>SSR Size</th>
+                <th>SSR Start</th>
+                <th>SSR End</th>
+                <th>Primer</th>
+                <th>Annotation</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+        	<% i = 1 %>
+        	<% @Ssr.each do |ss| %>
+            <tr>
+            	<input type="hidden" id="ssr_id" data-ssr_id="<%= ss.id %>"/>
+            	<td><%= i %></td>
+                <td><%= ss.SSR_ID %></td>
+                <td><%= get_ssr_type_name(ss.SSR_type) %></td>
+                <td><%= reduce_long_string(ss.SSR, 20) %></td>
+                <td><%= ss.size %></td>
+                <td><%= ss.start %></td>
+                <td><%= ss.end %></td>
+                <td><% unless ss.Forward1.nil? %><a href="#" class="btn btn-xs btn-default primer">Primers</a> <% else %> No Primer <% end %></td>
+                <td><% unless ss.annotation_id.nil? %><a href="#" class="btn btn-xs btn-default annotation">Annotation <% else %> No Annotation <% end %></td>
+            </tr>
+            <% i += 1 %>
+            <% end %>
+        </tbody>
+    </table>
+</div>

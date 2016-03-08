@@ -1,0 +1,70 @@
+<!-- Modal -->
+<div class="modal fade" id="modal_annotation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Annotation details</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <th colspan="2"><b>Basic description</b></th>
+          </thead>
+          <tbody>
+	    <tr>
+	      <td><b>ID</b>:</td>
+	      <td><p id="anno_id"></td>
+            </tr>
+	    <tr>
+	      <td><b>Most probable gene name</b>:</td>
+	      <td><p id="mpgn"></td>
+	    </tr>
+	    <tr>
+	      <td><b>Most probable gene description</b>:</td>
+	      <td><p id="mpgd"></td>
+	    </tr>
+  	  </tbody>
+	</table>
+
+	<table class="table table-striped">
+          <thead>
+            <th>Go Term</th>
+          </thead>
+          <tbody>
+	    <tr>
+	      <td><p id="go_term"></td>
+	    </tr>
+  	  </tbody>
+	</table>
+
+	<table class="table table-striped">
+          <thead>
+            <th>Unit Prot Keyword</th>
+          </thead>
+          <tbody>
+	    <tr>
+	      <td><p id="unit_prot"></td>
+	    </tr>
+  	  </tbody>
+	</table>
+
+	<table class="table table-striped">
+          <thead>
+            <th>Inter Pro</th>
+          </thead>
+          <tbody>
+	    <tr>
+	      <td><p id="inter_pro"></td>
+	    </tr>
+  	  </tbody>
+	</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

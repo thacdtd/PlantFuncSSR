@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require chosen
+ *= require_tree .
+ *= require_self
+ */
+
+.btn-fix_width {
+    width: 35px !important;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding-top: 30%;
+    z-index: 999999;
+}
+
+#overlay h2 {
+    position: fixed;
+    margin-left: 40%;
+    top: 40%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-right {
+  text-align: right;
+}
+
+p.big {
+    line-height: 2;
+}
+
+p.medium {
+    line-height: 1;
+}
+
+span.tab{
+    padding: 0 20px; /* Or desired space*/
+}
+
+li.lh2{
+    line-height: 2;
+}

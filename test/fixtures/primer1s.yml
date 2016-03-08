@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Forward: MyString
+  Reverse: MyString
+  FP_Tm: 1.5
+  FP_Size: 1
+  RP_Tm: 1.5
+  RP_Size: 1
+  Product_Size: 1
+  Start: 1
+  End: 1
+
+two:
+  Forward: MyString
+  Reverse: MyString
+  FP_Tm: 1.5
+  FP_Size: 1
+  RP_Tm: 1.5
+  RP_Size: 1
+  Product_Size: 1
+  Start: 1
+  End: 1

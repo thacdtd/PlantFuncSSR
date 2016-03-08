@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Num_Seqs_Exam: 1
+  Size_Exam_Seqs: 1
+  Num_SSR_Indent: 1
+  SSR_Cont_Seqs: 1
+  Seqs+Cont_SSR: 1
+  Num_SSR_Present: 1
+  Mono: 1
+  Di: 1
+  Tri: 1
+  Tetra: 1
+  Penta: 1
+  Hexa: 1
+  Complex: 1
+  Compound: 1
+
+two:
+  Num_Seqs_Exam: 1
+  Size_Exam_Seqs: 1
+  Num_SSR_Indent: 1
+  SSR_Cont_Seqs: 1
+  Seqs+Cont_SSR: 1
+  Num_SSR_Present: 1
+  Mono: 1
+  Di: 1
+  Tri: 1
+  Tetra: 1
+  Penta: 1
+  Hexa: 1
+  Complex: 1
+  Compound: 1

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SSR_ID: MyString
+  SSR_nr: 1
+  SSR_type: MyString
+  SSR: MyString
+  size: 1
+  start: 1
+  end: 1
+
+two:
+  SSR_ID: MyString
+  SSR_nr: 1
+  SSR_type: MyString
+  SSR: MyString
+  size: 1
+  start: 1
+  end: 1
