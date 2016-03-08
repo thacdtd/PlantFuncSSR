@@ -12574,3 +12574,304 @@ Started GET "/contact" for ::1 at 2016-03-07 19:06:18 +1100
 Processing by ContactController#index as HTML
   Rendered contact/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 208ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 09:30:48 +1100
+
+Mysql2::Error (Access denied for user ''@'localhost' to database 'plantssr'):
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.7ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (140.1ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 09:30:49 +1100
+
+Mysql2::Error (Access denied for user ''@'localhost' to database 'plantssr'):
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.20) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  handle_invalid_percent_encoding_requests (1.0.2) lib/handle_invalid_percent_encoding_requests/middleware.rb:18:in `call'
+  rack-utf8_sanitizer (1.3.1) lib/rack/utf8_sanitizer.rb:15:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/thac/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/thac/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 09:31:46 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (10.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mFamily Load (1.2ms)[0m  SELECT  `families`.* FROM `families`  ORDER BY name ASC LIMIT 1
+  [1m[36mFamily Load (1.5ms)[0m  [1mSELECT `families`.* FROM `families`  ORDER BY name ASC[0m
+  [1m[35mSpecies Load (5.3ms)[0m  SELECT `species`.* FROM `species` WHERE `species`.`family_id` = 20  ORDER BY name ASC
+  Rendered welcome/_advance_search.html.erb (182.4ms)
+  Rendered welcome/index.html.erb within layouts/application (188.9ms)
+Completed 200 OK in 716ms (Views: 670.7ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/assets/chosen.self-0c52bc1aea6e2dccee5d2c2d4d22170acd55b13a6cc43ce756202418aba8cb93.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/bootstrap.self-dd8ac08e17487e70c109f7c6bd9417ddb3750e7a11c3bd0c8043bfc6294bc6d3.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/browse_microsatellite_by_families.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/buttons.dataTables.min.self-c7d55fb721c0a1bb591d30b6e06f7781fbd13ab200a8aef0fa8df62e455bc0b1.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/browse_microsatellite.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/browse_microsatellite_by_species.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/advance_search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/contact.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/dataTables.bootstrap.self-46e131c356d8a0bc1cb90a1377c8b454685ad79b55074513f108a04540b93b62.css?body=1" for ::1 at 2016-03-09 09:31:47 +1100
+
+
+Started GET "/assets/dataTables.tableTools.self-9abc3464c3aae1a3e27a8414152b3d78e9f6fc80e4bda2db04e3463a8f941ac1.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/documents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/markers_list.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/microsatellite_overview.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/scaffolds.self-8b22a8056f43f0d769d45f4b3361c8f96f5ba0aba92cfffb98615caa0ada9603.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/summary_report.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/tutorial.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/application.self-5f28220b60b81e9555ed2c0b5140fe37083aa7d4b572e4aad203fe2a5a155765.css?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/jquery.dataTables.min.self-ce16ff3fbcd974616d3c636439d6f9d511e2004977aced722e4eccdfc90fcb8c.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/dataTables.bootstrap.min.self-d07df0c6490bc9562bd4329f7f6c66dfda992f11a3690a4d59ce40eb6319cbce.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/dataTables.tableTools.self-3e2ba4d770c2417244fcff0ec83d3d2e1dc0e632c7389ae2ef9cea1573e443b4.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/dataTables.buttons.min.self-346a1cf0035743862348e9d6b8703c153966e98fe523b2efea257256c9032ecb.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/pdfmake.min.self-bafdf8b924c89f63bc5b7c1560e0609ff4a3eb8a732ff78f63f26d9b6ff94d1b.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/jszip.min.self-f8b9c5100d1d5b6a84317f6f0848fcedbc9dccb44074e7a080c9c76082403bc0.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/vfs_fonts.self-8f2d554ee1ccf0fe24f70ab5ec47bf58a7efe3f42727523bd97c1820a9348192.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/buttons.html5.min.self-cc1aaa0dca4ff7796641985eb144c239f41463109c07af385fc41e2ac7440a97.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/highcharts.self-4d59aba3479906fe8f78b35da99168ee7e6b0f5c1d7eedb63f91e01ba39007be.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/exporting.self-a17ede265819a9dc245ef6c7aade92d9190f353d01b93048039f9eb89deb8977.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/chosen.jquery.self-cd798c92fabf3141110e66b0f36f3dc7b1f6dbc45686720830e75cf33ff7b344.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/application.self-79aca7ca761f5f0abdd3af66a5745e993fd4337d975e36bc66fa473dfb35e47f.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/welcome/welcome.self-81570d92ec43e1f30ec683cb62acc3cec83b2e9625cb56e2d51e259b940f90e0.js?body=1" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/assets/chosen-sprite.png" for ::1 at 2016-03-09 09:31:48 +1100
+
+
+Started GET "/microsatellite_overview" for ::1 at 2016-03-09 09:31:54 +1100
+Processing by MicrosatelliteOverviewController#index as HTML
+  Rendered microsatellite_overview/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 198ms (Views: 197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/browse_microsatellite" for ::1 at 2016-03-09 09:31:55 +1100
+Processing by BrowseMicrosatelliteController#index as HTML
+  [1m[36mFamily Load (0.6ms)[0m  [1mSELECT  `families`.* FROM `families`  ORDER BY name ASC LIMIT 1[0m
+  Rendered browse_microsatellite/_browse_by_alphabet.html.erb (0.7ms)
+  [1m[35mFamily Load (0.7ms)[0m  SELECT `families`.* FROM `families`  ORDER BY name ASC
+  [1m[36mSpecies Load (0.5ms)[0m  [1mSELECT `species`.* FROM `species` WHERE `species`.`family_id` = 20  ORDER BY name ASC[0m
+  Rendered browse_microsatellite/_simple_search.html.erb (8.1ms)
+  Rendered browse_microsatellite/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 223ms (Views: 219.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/PlantFuncSSR-ERD-709d6f405080512c44d752f3a5826caa52e5b7923e8fa1436197cb4f2df77df4.png" for ::1 at 2016-03-09 09:31:55 +1100
+
+
+Started GET "/tutorial" for ::1 at 2016-03-09 09:31:56 +1100
+Processing by TutorialController#index as HTML
+  Rendered tutorial/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 269ms (Views: 268.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for ::1 at 2016-03-09 09:31:57 +1100
+Processing by ContactController#index as HTML
+  Rendered contact/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 203ms (Views: 202.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-09 09:31:59 +1100
+Processing by WelcomeController#index as HTML
+  [1m[35mFamily Load (0.7ms)[0m  SELECT  `families`.* FROM `families`  ORDER BY name ASC LIMIT 1
+  [1m[36mFamily Load (0.8ms)[0m  [1mSELECT `families`.* FROM `families`  ORDER BY name ASC[0m
+  [1m[35mSpecies Load (3.7ms)[0m  SELECT `species`.* FROM `species` WHERE `species`.`family_id` = 20  ORDER BY name ASC
+  Rendered welcome/_advance_search.html.erb (15.5ms)
+  Rendered welcome/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 218ms (Views: 210.2ms | ActiveRecord: 5.2ms)

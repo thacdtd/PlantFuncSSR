@@ -7,8 +7,8 @@
 default: &default
     adapter: mysql2
     host: 127.0.0.1
-    username: gaurav
-    password: 
+    username: root
+    password: root
     encoding: utf8
     reconnect: true
     socket: /var/lib/mysql/mysql.sock
@@ -17,15 +17,15 @@ default: &default
 
 development:
   <<: *default
-  database: PlantSSR
+  database: PlantFuncSSR
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: PlantSSR_test
+  database: PlantFuncSSR_test
 
 production:
   <<: *default
-  database: PlantSSR
+  database: PlantFuncSSR
