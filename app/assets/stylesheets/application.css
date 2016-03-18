@@ -60,3 +60,9 @@ span.tab{
 li.lh2{
     line-height: 2;
 }
+
+.clear
+{
+	display:block;
+	height:5px;
+}

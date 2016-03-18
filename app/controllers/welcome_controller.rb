@@ -1,14 +1,14 @@
 class WelcomeController < ApplicationController
   include ApplicationHelper
   def index
-    @families = Family.all.order('name ASC')
-    @species = Species.where(:family_id => @families.first.id).order('name ASC')
+    @families = Family.where(:del_flag => 1).order('name ASC')
+    @species = Species.where(:family_id => @families.first.id, :del_flag => 1).order('name ASC')
     # @go_terms = Goterm.all.order('Goterm ASC').limit(100)
     # @itpro = InterPro.all.order('InterPro ASC').limit(100)
   end
 
   def change_family
-    @species = create_data_cbo(Species.where(:family_id => params[:family_id]).order('name ASC'), {:name=>"name",:id=>"id"})
+    @species = create_data_cbo(Species.where(:family_id => params[:family_id], :del_flag => 1).order('name ASC'), {:name=>"name",:id=>"id"})
     render :partial => "load_species", :locals => { :family_id => params[:family_id] }
   end
 
